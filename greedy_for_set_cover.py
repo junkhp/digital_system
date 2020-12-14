@@ -65,7 +65,10 @@ def main():
                 sets_copy[i][e-1] = 0
     
     print('必要な集合のインデックス')
-    print(checked_indexes)
+    print(sorted(checked_indexes))
+    print('集合')
+    for i in sorted(checked_indexes):
+        print(sets[i])
     print('コスト')
     print(all_value)
 
