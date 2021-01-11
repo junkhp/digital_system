@@ -25,6 +25,7 @@ def distace(a, b):
 def main():
     point_num = 50
     k = int(math.sqrt(point_num))
+    
     # 点を初期化
     points = make_random_points(point_num)
     # 点をプロット
@@ -56,4 +57,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
