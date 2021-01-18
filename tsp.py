@@ -42,7 +42,7 @@ def nearest_addition(cities):
                     correspond_city = toured_index
         tour.insert(correspond_city + 1, S[min_city_index])
         del S[min_city_index]
-    
+    print(tour)
     return tour
 
 
@@ -57,6 +57,7 @@ def draw_tour(P):
 def main():
     city_num = 6
     coodinates = get_coordinates(city_num)
+    print(coodinates)
     tour = nearest_addition(coodinates)
     # print(tour)
     draw_tour(coodinates)
